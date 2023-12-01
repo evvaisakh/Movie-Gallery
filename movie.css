@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+body {
+    font-family: 'Teko', sans-serif;
+    background-image: url('./images/bg_image.jpg');
+    background-size: 30%;
+}
+
+.topnav {
+    display: flex;
+    align-items: baseline;
+}
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: burlywood;
+    padding: 20px;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: dimgray;
+    cursor: pointer;
+}
+#first{
+    color: goldenrod;
+}
+#second{
+    color: lightskyblue;
+}
+.row {
+    height: 500px;
+    position: relative;
+}
+
+.col {
+    width: 280px;
+    background-color: dimgray;
+    position: absolute;
+    top: 20px;
+    border: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.col:hover .overlay {
+    height: 100%;
+}
+
+p {
+    width: 100%;
+    margin-top: 30%;
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0px;
+    color: antiquewhite;
+}
+
+.c1 {
+    left: 40px;
+}
+
+.c2 {
+    left: 340px;
+}
+
+.c3 {
+    left: 640px;
+}
+
+.c4 {
+    left: 940px;
+}
+
+.rating {
+    width: 65%;
+    height: 30px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border: 2px solid;
+}
+
+.rating i {
+    color: gold;
+    margin-top: 14px;
+    margin-left: 6px;
+}
